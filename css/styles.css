@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee8d5; /* Solarized Light (white) Background */
+    color: #002b36; /* Solarized Black (brblack)*/
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 1em 0 1em 0.5em;
+    padding: 1em;
+    border: none;
+}
+a {
+    color: #268bd2; /* Solarized Blue (blue) */
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3 {
+    color: #073642; /* Solarized Dark Text */
+}
+pre {
+    background: #073642; /* Solarized (brgreen) Preformatted Background */
+    color: #fdf6e3; /* Solarized light (brwhite) */
+    padding: 1em;
+    overflow: auto;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #073642; /* Solarized (black) */
+}
