@@ -1,11 +1,16 @@
+html {
+    font-size: 18px; /* Set the base font size to 18px */
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #eee8d5; /* Solarized Light (white) Background */
+    font-size: 1rem;
+	background-color: #eee8d5; /* Solarized Light (white) Background */
     color: #002b36; /* Solarized Black (brblack)*/
-    line-height: 1.6;
+    line-height: 1.4;
     max-width: 800px;
-    margin: 1em 0 1em 0.5em;
-    padding: 1em;
+    margin: 0 0 1em 0.5em;
+    /* padding: 0.5em; */
     border: none;
 }
 a {
@@ -15,8 +20,31 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1, h2, h3 {
+/* Heading Styles */
+h1 {
     color: #073642; /* Solarized Dark Text */
+    font-size: 1.9rem; /* 45px */
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0.5em; /* Consistent bottom margin */
+}
+
+h2 {
+    color: #073642; /* Solarized Dark Text */
+    font-size: 1.7rem; /* 36px */
+	margin-top: 0; /* Remove top margin */
+    margin-bottom: 0.5em; /* Consistent bottom margin */
+}
+
+h3 {
+    color: #073642; /* Solarized Dark Text */
+    font-size: 1.2rem; /* 27px */
+	margin-top: 0; /* Remove top margin */
+    margin-bottom: 0.5em; /* Consistent bottom margin */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1rem; /* 18px */
 }
 pre {
     background: #073642; /* Solarized (brgreen) Preformatted Background */
@@ -39,7 +67,8 @@ hr {
 }
 
 .content {
-    margin-left: 220px;
+    max-width: 65ch; /* Limit line length to approximately 65 characters */
+	margin-left: 220px;
     padding: 1em;
 }
 
