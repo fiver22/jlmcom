@@ -29,3 +29,26 @@ hr {
     height: 1px;
     background: #073642; /* Solarized (black) */
 }
+/* Sidebar Styles */
+.sidebar {
+    float: left;
+    width: 200px;
+    padding: 1em;
+    background-color: #eee8d5; /* Solarized Light Background */
+    border-right: none; 
+}
+
+.content {
+    margin-left: 220px;
+    padding: 1em;
+}
+
+ul.sidebar-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.sidebar-links li {
+    margin: 0.5em 0;
+}
+
