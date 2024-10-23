@@ -1,0 +1,38 @@
+{
+    "website": [
+        "index.html"
+    ],
+    "old.web,": [
+        "index.html"
+    ],
+    "games": [
+        "gaming.html"
+    ],
+    "gaming": [
+        "gaming.html"
+    ],
+    "nintendo.switch": [
+        "gaming.html"
+    ],
+    "hp": [
+        "gaming.html"
+    ],
+    "nvidia": [
+        "gaming.html"
+    ],
+    "pc.gaming": [
+        "gaming.html"
+    ],
+    "arch.linux": [
+        "gaming.html"
+    ],
+    "gnome": [
+        "gaming.html"
+    ],
+    "minecraft": [
+        "gaming.html"
+    ],
+    "valheim": [
+        "gaming.html"
+    ]
+}
