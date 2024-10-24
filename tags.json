@@ -5,10 +5,19 @@
     "old.web,": [
         "index.html"
     ],
-    "games": [
+    "gaming": [
+        "minecraft.html",
         "gaming.html"
     ],
-    "gaming": [
+    "pc.gaming": [
+        "minecraft.html",
+        "gaming.html"
+    ],
+    "minecraft": [
+        "minecraft.html",
+        "gaming.html"
+    ],
+    "games": [
         "gaming.html"
     ],
     "nintendo.switch": [
@@ -20,16 +29,10 @@
     "nvidia": [
         "gaming.html"
     ],
-    "pc.gaming": [
-        "gaming.html"
-    ],
     "arch.linux": [
         "gaming.html"
     ],
     "gnome": [
-        "gaming.html"
-    ],
-    "minecraft": [
         "gaming.html"
     ],
     "valheim": [
