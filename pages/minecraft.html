@@ -1,0 +1,65 @@
+<!--
+---
+tags: ["gaming", "pc.gaming", "minecraft"]
+---
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+<link rel="stylesheet" href="../css/styles.css"></head>
+<body>
+<div class="sidebar">
+    <h3>Site Index</h3>
+    <ul class="sidebar-links">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="pages/gaming.html">Gaming</a></li>        
+<!-- Add more links here as I create more pages -->
+    </ul>
+</div>
+
+<div class="content">
+    <h2>Minecraft</h2>
+    <p>Currently playing minecraft. Hosting a server locally and a friend adn I play. Using Neoforge and a bunch of cleint plugins and shaders. A few server plugins, one for performance, one for discord integration.
+Client side I'm using Prism Launcher on my "gaming pc" which is pretty modest but more than enough for minecraft. I suppose I should say that non java minecraft is the devil or something but I know too many kids who play bedrock or pocket to be that much of a jerk. I would say that I prefer java.</p>
+
+<p>I run the server via docker compose -well, portainer stacks, using <a href="https://github.com/itzg/docker-minecraft-server">itzg/docker-minecraft-server</a> a la: </p> 
+
+<pre>
+services:
+  mc:
+    image: itzg/minecraft-server
+    container_name: mc-server-20241012
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    ports:
+      - "25565:25565" 
+    environment:
+      EULA: "TRUE"
+      EXEC_DIRECTLY: "true"
+      TZ: ""
+      SNOOPER_ENABLED: "false"
+      MEMORY: "8G"
+      TYPE: "NEOFORGE"                      
+      NEOFORGE_VERSION: "latest"        
+      VERSION: "1.21.1"
+      MODE: "SURVIVAL"
+      FORCE_GAMEMODE: "true"
+      DIFFICULTY: "HARD"
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
+      PVP: "false"      
+      OPS: "" 
+      LEVEL: ""
+      LEVEL_SEED: "1975020419760203"
+</pre>
+
+<p>(I've removed some details)
+Of note: I first tried seting some server.properties in the compose but ended up having to manually add a few files -whitelist, ops, and manually edit server.properties.</p>
+
+</body>
+</html>
+
+
