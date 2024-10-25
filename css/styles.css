@@ -74,6 +74,7 @@ body {
     border: none;
 }
 a {
+    font-size: 0.96rem;  /* Link text size, slightly smaller */
     color: #268bd2; /* Solarized Blue (blue) */
     text-decoration: none;
 }
