@@ -145,3 +145,6 @@ ul.sidebar-links li {
     margin: 0.5em 0;
 }
 
+footer p {
+    font-size: 0.8rem; /* Consistent with your link size if that's what you desire */
+}
