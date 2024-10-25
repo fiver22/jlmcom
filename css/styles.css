@@ -124,7 +124,7 @@ hr {
 /* Sidebar Styles */
 .sidebar {
     float: left;
-    width: 200px;
+    width: 180px;
     padding: 1em;
     background-color: #eee8d5; /* Solarized Light Background */
     border-right: none; 
@@ -132,7 +132,7 @@ hr {
 
 .content {
     max-width: 65ch; /* Limit line length to approximately 65 characters */
-	margin-left: 220px;
+	margin-left: 200px;
     padding: 1em;
 }
 
@@ -142,7 +142,7 @@ ul.sidebar-links {
 }
 
 ul.sidebar-links li {
-    margin: 0.5em 0;
+    margin: 0.2em 0;
 }
 
 footer p {
