@@ -12,30 +12,39 @@ def extract_frontmatter(content):
                 key, value = line.split(':', 1)
                 key = key.strip()
                 value = value.strip()
-                # Parse tags into a list
                 if key == 'tags':
-                    value = [v.strip() for v in value.strip('[]').replace('"', '').split(', ')]
+                    value = [v.strip() for v in value.strip('[]').replace('"', '').split(',')]
                 metadata[key] = value        
         return metadata
     return None
 
-tags_dict = {}
+def main():
+    # Ensure this is the correct root directory where your pages directory resides
+    root_directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    tags_dict = {}
 
-# Traverse your directory for HTML files
-for root, _, files in os.walk('.'):
-    for file in files:
-        if file.endswith('.html'):
-            filepath = os.path.join(root, file)
-            print(f"Processing file: {filepath}")
-            with open(filepath, 'r') as f:
-                content = f.read()
-                metadata = extract_frontmatter(content)
-                print(f"Extracted metadata: {metadata}")  # Print extracted metadata
-                if metadata and 'tags' in metadata:
-                    for tag in metadata['tags']:
-                        tags_dict.setdefault(tag, []).append(file)
+    for root, dirs, files in os.walk(os.path.join(root_directory, 'pages')):
+        for file in files:
+            if file.endswith('.html'):
+                filepath = os.path.join(root, file)
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        metadata = extract_frontmatter(content)
+                        if metadata and 'tags' in metadata:
+                            for tag in metadata['tags']:
+                                tags_dict.setdefault(tag, []).append(os.path.relpath(filepath, start=root_directory))
+                        else:
+                            print(f"No tags found in {file}")
+                except Exception as e:
+                    print(f"Error reading or processing {filepath}: {str(e)}")
 
-# Write the tags.json file
-with open('tags.json', 'w') as json_file:
-    json.dump(tags_dict, json_file, indent=4)
+    output_path = os.path.join(root_directory, 'tags.json')
+    with open(output_path, 'w') as json_file:
+        json.dump(tags_dict, json_file, indent=4)
+
+    print("Done. Tags have been updated. Tags file written at:", output_path)
+
+if __name__ == "__main__":
+    main()
 

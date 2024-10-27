@@ -1,41 +1,65 @@
 {
-    "website": [
-        "index.html"
-    ],
-    "old.web,": [
-        "index.html"
-    ],
     "gaming": [
-        "minecraft.html",
-        "gaming.html"
+        "pages/minecraft.html",
+        "pages/gaming.html"
     ],
     "pc.gaming": [
-        "minecraft.html",
-        "gaming.html"
+        "pages/minecraft.html",
+        "pages/gaming.html",
+        "pages/blog/20241027.html"
     ],
     "minecraft": [
-        "minecraft.html",
-        "gaming.html"
+        "pages/minecraft.html",
+        "pages/gaming.html",
+        "pages/blog/20241027.html"
     ],
     "games": [
-        "gaming.html"
+        "pages/gaming.html"
     ],
     "nintendo.switch": [
-        "gaming.html"
+        "pages/gaming.html"
     ],
     "hp": [
-        "gaming.html"
+        "pages/gaming.html"
     ],
     "nvidia": [
-        "gaming.html"
+        "pages/gaming.html"
     ],
     "arch.linux": [
-        "gaming.html"
+        "pages/gaming.html"
     ],
     "gnome": [
-        "gaming.html"
+        "pages/gaming.html"
     ],
     "valheim": [
-        "gaming.html"
+        "pages/gaming.html"
+    ],
+    "": [
+        "pages/blog/template_blog.html",
+        "pages/blog/template_blog.html",
+        "pages/blog/template_blog.html",
+        "pages/blog/template_blog.html",
+        "pages/blog/template_blog.html",
+        "pages/blog/template_blog.html",
+        "pages/blog/template_blog.html",
+        "pages/blog/template_blog.html"
+    ],
+    "covid": [
+        "pages/blog/20241027.html"
+    ],
+    "rlm": [
+        "pages/blog/20241027.html"
+    ],
+    "flu": [
+        "pages/blog/20241027.html"
+    ],
+    "vaccine": [
+        "pages/blog/20241027.html"
+    ],
+    "filebrowser": [
+        "pages/blog/20241027.html"
+    ],
+    "self.hosting": [
+        "pages/blog/20241027.html"
     ]
 }
