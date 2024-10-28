@@ -1,20 +1,10 @@
 {
-    "gaming": [
-        "pages/minecraft.html",
-        "pages/gaming.html"
-    ],
-    "pc.gaming": [
-        "pages/minecraft.html",
-        "pages/gaming.html",
-        "pages/blog/20241027.html"
-    ],
-    "minecraft": [
-        "pages/minecraft.html",
-        "pages/gaming.html",
-        "pages/blog/20241027.html"
-    ],
     "games": [
         "pages/gaming.html"
+    ],
+    "gaming": [
+        "pages/gaming.html",
+        "pages/minecraft.html"
     ],
     "nintendo.switch": [
         "pages/gaming.html"
@@ -25,24 +15,24 @@
     "nvidia": [
         "pages/gaming.html"
     ],
+    "pc.gaming": [
+        "pages/gaming.html",
+        "pages/minecraft.html",
+        "pages/blog/20241027.html"
+    ],
     "arch.linux": [
         "pages/gaming.html"
     ],
     "gnome": [
         "pages/gaming.html"
     ],
+    "minecraft": [
+        "pages/gaming.html",
+        "pages/minecraft.html",
+        "pages/blog/20241027.html"
+    ],
     "valheim": [
         "pages/gaming.html"
-    ],
-    "": [
-        "pages/blog/template_blog.html",
-        "pages/blog/template_blog.html",
-        "pages/blog/template_blog.html",
-        "pages/blog/template_blog.html",
-        "pages/blog/template_blog.html",
-        "pages/blog/template_blog.html",
-        "pages/blog/template_blog.html",
-        "pages/blog/template_blog.html"
     ],
     "covid": [
         "pages/blog/20241027.html"
