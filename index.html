@@ -16,39 +16,49 @@ tags: ["website", "old.web"]
     <div id="sidebar"></div>
     <script src="/scripts/loadSidebar.js"></script>
 
+    <!-- Tags section (buttons added dynamically by interactTags.js) -->
+    <div id="tags"></div>
+    
+    <!-- Post container where filtered posts will be displayed -->
+    <div id="post-container"></div>
+
     <!-- Main content of the page -->
     <div class="content">
         <h3>This Is My Simple Website</h3>
-<p>This is a simple web page. I am not able to make a very complex page, and I don't like them much. I think this might be a blog kind of thing. Dunno. I miss the old web -and while I can recreate some of the simple aesthetic of the old web, I don't know that I have the content to populate a personal site. We'll see. </p>
+        <p>This is a simple web page. I am not able to make a very complex page, and I don't like them much. I think this might be a blog kind of thing. Dunno. I miss the old web -and while I can recreate some of the simple aesthetic of the old web, I don't know that I have the content to populate a personal site. We'll see.</p>
     
-    <h3>Introduction</h3>
-    <p>I'm doing this out of boredom; to learn; and to create something (small)</p>
+        <h3>Introduction</h3>
+        <p>I'm doing this out of boredom; to learn; and to create something (small)</p>
 
-<h3>Recent Blog Posts</h3>
-    <section>
-        <h4>Recent Posts</h4>
-        <article>
-            <h3><a class="blog-link" href="/pages/blog/20241027.html">2024-10-27: I'm sick</a></h3>
-        </article>
-        <!-- Add more blog links as new posts are created -->
-    </section>
+        <h3>Recent Blog Posts</h3>
+        <section>
+            <h4>Recent Posts</h4>
+            <article>
+                <h3><a class="blog-link" href="/pages/blog/20241027.html">2024-10-27: I'm sick</a></h3>
+            </article>
+            <!-- Add more blog links as new posts are created -->
+        </section>
     
-    <h3>Links</h3>
-    <p>Here's where you'd see links to cool sites. They are getting harder to find... the internet is reddit and twitter and facebook and I'm hardly going to link to those. </p>
-    <ul>
-        <li><a href="https://www.bfoliver.com">https://www.bfoliver.com/</a></li>
-        <li><a href="http://www.some.other.site">another intersting site would go here but I can't think of any right now and I'm literally just learning this.And hey look, this is a link but not really. I'm sure there's a way to fix this even if it is just a place holder</a></li>
-    </ul>
+        <h3>Links</h3>
+        <p>Here's where you'd see links to cool sites. They are getting harder to find... the internet is reddit and twitter and facebook and I'm hardly going to link to those. </p>
+        <ul>
+            <li><a href="https://www.bfoliver.com">https://www.bfoliver.com/</a></li>
+            <li><a href="http://www.some.other.site">another interesting site would go here but I can't think of any right now and I'm literally just learning this. And hey look, this is a link but not really. I'm sure there's a way to fix this even if it is just a placeholder</a></li>
+        </ul>
     
-    <h4>Preformatted Text</h4>
-    <pre>
+        <h4>Preformatted Text</h4>
+        <pre>
 I mean, preformatted text is pretty cool. I'm putting this in so I know I can. 
-    </pre>
+        </pre>
+    </div>
 
     <hr>
-<footer>
-<p>&copy; 2024 - jayelem. This work is public domain (<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>). Attribution and open sharing of derivatives are appreciated but not required.</p></div>
-</footer>
+    <footer>
+        <p>&copy; 2024 - jayelem. This work is public domain (<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>). Attribution and open sharing of derivatives are appreciated but not required.</p>
+    </footer>
+
+    <!-- Include interactTags.js to handle tag-related interactivity -->
+    <script src="/scripts/interactTags.js"></script>
 </body>
 </html>
 
