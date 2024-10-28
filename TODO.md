@@ -1,4 +1,6 @@
 # TODO List for jlmcom
-- fix http://localhost:8000/blog/index.html links to blogposts -rn it 404s
-- I want to extend the preview and change formatting for blog entries.
-- Need to have a better workflow for adding a blog entry, as it stands I nee dto build the usniverse first :/ 
+- 1) I want to extend the preview and change formatting for blog entries.
+- 2) Need to have a better workflow for adding a blog entry, as it stands I nee dto build the usniverse first :/ 
+- 3) need to fix sidebar js or how it relates to the main content? see blogpost 2024-10-28 how the main content text overflows into the sidebar area like that space isn't reserved.
+-some progress made on '2)', but still a bit fucked. I need new blogposts to auto populate /index.html automatically. 
+  
