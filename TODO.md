@@ -5,4 +5,10 @@
 - 4) some progress made on '2)', but still a bit fucked. I need new blogposts to auto populate /index.html automatically. 
 - 5) I should probs make a links page and move the links off of /index.html
 - 6) clean up /index.html more, remove the preformated text example 
-- 7) so cool if I could add rss. so. cool.  
+- 7) so cool if I could add rss. so. cool. 
+
+--
+1) wip some stuff done
+2) this is important, it's pretty complex, I have started to address this with a script but i still need to do a lot of linking -to /index.html, and to /pages/blog/index.html
+
+ 
