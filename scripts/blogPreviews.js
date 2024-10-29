@@ -10,9 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 const excerpt = doc.querySelector('p') ? doc.querySelector('p').innerText : 'No excerpt available.';
                 const preview = document.createElement('p');
                 preview.innerText = excerpt.substring(0, 100) + '...';
+                preview.style.fontSize = "0.75rem"; 
                 link.after(preview);
             })
             .catch(error => console.error('Error loading blog post:', error));
     });
 });
+
 
