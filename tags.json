@@ -34,6 +34,9 @@
     "valheim": [
         "pages/gaming.html"
     ],
+    "": [
+        "pages/blog/20241031.html"
+    ],
     "film": [
         "pages/blog/20241028.html"
     ],
@@ -63,5 +66,11 @@
     ],
     "self.hosting": [
         "pages/blog/20241027.html"
+    ],
+    "networking": [
+        "pages/blog/20241101.html"
+    ],
+    "cable.run": [
+        "pages/blog/20241101.html"
     ]
 }
