@@ -1,3 +1,5 @@
+# To address your concern, let's analyze the script to confirm how it currently inserts new entries and suggest a fix to ensure new posts appear at the top in all locations.
+
 import os
 from datetime import datetime
 
@@ -9,14 +11,13 @@ project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 blog_dir = "/pages/blog"
 
 # Construct the local file paths relative to the project root
-# Strip the leading slash to avoid confusion for local access
 local_blog_dir = blog_dir.lstrip("/")
 template_path = os.path.join(project_root, local_blog_dir, "template_blog.html")
 blog_index_path = os.path.join(project_root, local_blog_dir, "index.html")
 root_index_path = os.path.join(project_root, "index.html")  # Adding path for the root index.html
 
 # Step 1: Create a New Blog File
-new_post_date = datetime.now().strftime("%Y%m%d")
+new_post_date = datetime.now().strftime("%Y-%m-%d")
 new_post_title = input("Enter the title for the new blog post: ")  # Prompt for the title of the new blog post
 new_post_filename = f"{new_post_date}.html"
 new_post_path = os.path.join(project_root, local_blog_dir, new_post_filename)
@@ -46,13 +47,13 @@ except FileNotFoundError:
     print(f"Error: The blog index file '{blog_index_path}' was not found.")
     exit(1)
 
-# Add new blog link in chronological order (assuming descending order)
+# Add new blog link at the top of the list (assuming descending order)
 # Use the root-relative path for the HTML link
-new_entry = f'        <li><a href="{blog_dir}/{new_post_filename}">{new_post_title} - {new_post_date}</a></li>\n'
+new_entry = f'        <li><a href="{blog_dir}/{new_post_filename}">{new_post_date}: {new_post_title}</a></li>\n'
 
-# Insert the new entry just after the marker comment in /pages/blog/index.html
+# Insert the new entry right after the opening <ul> tag in /pages/blog/index.html
 for i, line in enumerate(index_content):
-    if "<!-- Add more links here for each new blog post -->" in line:
+    if "<ul>" in line:
         index_content.insert(i + 1, new_entry)
         break
 
@@ -68,21 +69,34 @@ try:
         root_index_content = root_index_file.readlines()
 except FileNotFoundError:
     print(f"Error: The root index file '{root_index_path}' was not found.")
-    exit(1)
+    root_index_content = None
 
-# Add new blog link in chronological order (assuming descending order)
-# Use the root-relative path for the HTML link
-new_entry_root = f'                <h3><a class="blog-link" href="{blog_dir}/{new_post_filename}">{new_post_date}: {new_post_title}</a></h3>\n'
+if root_index_content:
+    # Add new blog link at the top of the "Recent Posts" section using a marker comment
+    # Use the root-relative path for the HTML link
+    new_entry_root = f'            <article>\n                <h4><a class="blog-link" href="{blog_dir}/{new_post_filename}">{new_post_date}: {new_post_title}</a></h4>\n            </article>\n'
 
-# Insert the new entry just after the marker comment in /index.html
-for i, line in enumerate(root_index_content):
-    if "<!-- Add more blog links as new posts are created -->" in line:
-        root_index_content.insert(i + 1, new_entry_root)
-        break
+    # Look for a marker comment to identify where to insert new blog entries
+    marker = "<!-- Add more blog links as new posts are created -->"
+    marker_found = False
+    for i, line in enumerate(root_index_content):
+        if marker in line:
+            root_index_content.insert(i + 1, new_entry_root)  # Insert right after the marker
+            marker_found = True
+            break
 
-# Write the updated root index content back to file
-with open(root_index_path, "w") as root_index_file:
-    root_index_file.writelines(root_index_content)
+    if not marker_found:
+        # If marker not found, add a warning and provide a fallback approach to insert at the top of the "Recent Posts" section
+        print(f"Warning: Marker comment not found in /index.html. Adding entry at the top of the 'Recent Posts' section as fallback.")
+        for i, line in enumerate(root_index_content):
+            if "<section>" in line and "Recent Posts" in root_index_content[i + 1]:
+                root_index_content.insert(i + 2, new_entry_root)
+                break
 
-print(f"Root index updated with new entry in /index.html: {new_post_title}")
+    # Write the updated root index content back to file
+    with open(root_index_path, "w") as root_index_file:
+        root_index_file.writelines(root_index_content)
+    print(f"Root index updated with new entry in /index.html: {new_post_title}")
+else:
+    print("Warning: Root index file could not be read. No changes made to root index.")
 
