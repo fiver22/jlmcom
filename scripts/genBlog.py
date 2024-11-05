@@ -1,5 +1,3 @@
-# To address your concern, let's analyze the script to confirm how it currently inserts new entries and suggest a fix to ensure new posts appear at the top in all locations.
-
 import os
 from datetime import datetime
 
@@ -17,9 +15,9 @@ blog_index_path = os.path.join(project_root, local_blog_dir, "index.html")
 root_index_path = os.path.join(project_root, "index.html")  # Adding path for the root index.html
 
 # Step 1: Create a New Blog File
-new_post_date = datetime.now().strftime("%Y-%m-%d")
+new_post_date = datetime.now().strftime("%Y%m%d")
 new_post_title = input("Enter the title for the new blog post: ")  # Prompt for the title of the new blog post
-new_post_filename = f"{new_post_date}.html"
+new_post_filename = f"{new_post_date}.html"  # Change filename format to YYYYMMDD
 new_post_path = os.path.join(project_root, local_blog_dir, new_post_filename)
 
 # Copy template_blog.html to new blog post file
@@ -74,7 +72,8 @@ except FileNotFoundError:
 if root_index_content:
     # Add new blog link at the top of the "Recent Posts" section using a marker comment
     # Use the root-relative path for the HTML link
-    new_entry_root = f'            <article>\n                <h4><a class="blog-link" href="{blog_dir}/{new_post_filename}">{new_post_date}: {new_post_title}</a></h4>\n            </article>\n'
+    formatted_date = datetime.now().strftime("%Y-%m-%d")
+    new_entry_root = f'            <article>\n                <h4><a class="blog-link" href="{blog_dir}/{new_post_filename}">{formatted_date}: {new_post_title}</a></h4>\n            </article>\n'
 
     # Look for a marker comment to identify where to insert new blog entries
     marker = "<!-- Add more blog links as new posts are created -->"
