@@ -21,6 +21,15 @@
     <h4>20241106</h4>
     <p>Well, he won. The world feels less safe. People seem a little meaner. I worry so much for us all. I'm not American but as a neighbour, as a citizen of earth, I find this disturbing, scary, disappointing </p>
   </div>
+<div id="footer"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
 </body>
 </html>
 

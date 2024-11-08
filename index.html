@@ -63,14 +63,16 @@ tags: ["website", "old.web"]
       </article>
     </section>
   </div>
-  <hr>
-  <footer>
-    <p>2024 - jayelem. This work is public domain (<a href=
-    "https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>).
-    Attribution and open sharing of derivatives are appreciated but
-    not required.</p>
-  </footer>
-  <!-- Include interactTags.js to handle tag-related interactivity -->
+<div id="footer"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+ <!-- Include interactTags.js to handle tag-related interactivity -->
   <script src="/scripts/interactTags.js"></script> 
   <script src="/scripts/blogPreviews.js" defer></script>
 </body>
