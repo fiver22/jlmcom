@@ -65,7 +65,7 @@ html {
 body {
     font-family: 'Libre Baskerville', serif;
     font-size: 1rem;
-	background-color: #eee8d5; /* Solarized Light (white) Background */
+    background-color: #eee8d5; /* Solarized Light (white) Background */
     color: #002b36; /* Solarized Black (brblack)*/
     line-height: 1.4;
     max-width: 800px;
@@ -92,14 +92,14 @@ h1 {
 h2 {
     color: #073642; /* Solarized Dark Text */
     font-size: 1.7rem; 
-	margin-top: 0; /* Remove top margin */
+    margin-top: 0; /* Remove top margin */
     margin-bottom: 0.5em; /* Consistent bottom margin */
 }
 
 h3 {
     color: #073642; /* Solarized Dark Text */
     font-size: 1.2rem; 
-	margin-top: 0; /* Remove top margin */
+    margin-top: 0; /* Remove top margin */
     margin-bottom: 0.5em; /* Consistent bottom margin */
 }
 
@@ -132,7 +132,7 @@ hr {
 
 .content {
     max-width: 65ch; /* Limit line length to approximately 65 characters */
-	margin-left: 200px;
+    margin-left: 200px;
     padding: 1em;
 }
 
@@ -148,3 +148,4 @@ ul.sidebar-links li {
 footer p {
     font-size: 0.8rem; /* Consistent with your link size if that's what you desire */
 }
+

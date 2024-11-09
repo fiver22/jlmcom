@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <title>Blog Post - 20241109</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<!-- 
+--- tags: [] 
+--- 
+-->
+<body>
+  <div id="sidebar"></div>
+  <!-- Load sidebar script immediately after the sidebar placeholder -->
+  <script src="/scripts/loadSidebar.js"></script>
+  <div class="content">
+    Testing Blog Post Update
+    <h4>20241109</h4>
+    <p>Welcome to the new blog post.</p>
+  </div>
+<div id="footer"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+</body>
+</html>
+
