@@ -167,7 +167,11 @@ if root_index_content:
     # Add new blog link at the top of the "Recent Posts" section using a marker comment
     # Use the root-relative path for the HTML link
     formatted_date = datetime.now().strftime("%Y-%m-%d")
-    new_entry_root = f'            <article>\n                <h4><a class="blog-link" href="{blog_dir}/{new_post_filename}">{formatted_date}: {new_post_title}</a></h4>\n            </article>\n'
+    new_entry_root = (
+		f'            <article>\n'
+        f'        <h4><a class="blog-link" href="{blog_dir}/{new_post_filename}">">'
+		f'{formatted_date}: {new_post_title}</a></h4>\n'
+        f'			   </article>\n'
 
     # Look for a marker comment to identify where to insert new blog entries
     marker = "<!-- Add more blog links as new posts are created -->"
