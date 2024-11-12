@@ -1,5 +1,5 @@
-/* Define IBM Plex Mono (Regular) */
-@font-face {
+
+nt-face {
     font-family: 'IBM Plex Mono';
     src: url('/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.woff2') format('woff2'),
          url('/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.woff') format('woff'),
@@ -37,7 +37,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 /* Define Libre Baskerville (Bold) */
 @font-face {
     font-family: 'Libre Baskerville';
@@ -61,7 +60,6 @@
 html {
     font-size: 18px; /* Set the base font size to 18px */
 }
-
 body {
     font-family: 'Libre Baskerville', serif;
     font-size: 1rem;
@@ -95,7 +93,6 @@ h2 {
     margin-top: 0; /* Remove top margin */
     margin-bottom: 0.5em; /* Consistent bottom margin */
 }
-
 h3 {
     color: #073642; /* Solarized Dark Text */
     font-size: 1.2rem; 
@@ -148,4 +145,21 @@ ul.sidebar-links li {
 footer p {
     font-size: 0.8rem; /* Consistent with your link size if that's what you desire */
 }
+
+/* Mobile adjustments for better responsiveness */
+@media (max-width: 600px) {
+    body {
+        max-width: 95%; /* Use almost full width to reduce white space */
+        margin: 0 auto; /* Center the body content without excessive margins */
+        padding: 0.5em; /* Add minimal padding for readability */
+    }
+
+    .content {
+        max-width: 100%; /* Let the content take full available space */
+        margin-left: 0; /* Remove unnecessary side margin in portrait */
+        padding: 0.5em; /* Reduce padding to fit more content */
+    }
+}
+
+
 
