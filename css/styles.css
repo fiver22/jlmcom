@@ -146,7 +146,7 @@ footer p {
     font-size: 0.8rem; /* Consistent with your link size if that's what you desire */
 }
 
-/* Mobile adjustments for better responsiveness */
+/* Mobile adjustments for better responsiveness, thanks Fudge for catching this */
 @media (max-width: 600px) {
     body {
         max-width: 95%; /* Use almost full width to reduce white space */
