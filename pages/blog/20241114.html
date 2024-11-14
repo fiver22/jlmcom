@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <title>Blog Post - 20241114</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<!-- 
+--- tags: ["books", "attention.span", "digital.dementia", "annihilation", "southern.reach", "katie.mack", "jeff.vandermeer"] 
+--- 
+-->
+<body>
+  <div id="sidebar"></div>
+  <!-- Load sidebar script immediately after the sidebar placeholder -->
+  <script src="/scripts/loadSidebar.js"></script>
+  <div class="content">
+    reading became hard
+    <h4>20241114</h4>
+    <p>I've read for as long as I can remember. Eventually, like...may people I switched almost completely to audiobooks -which I still really love, but I decided to read the written word again and find it harder than it should be. Where I used to read 1 to 4 hours -but The past year I seem to average 30 minutes before I fall asleep or find myself wanting to do something else.</p><p>So in an effort clean up the old pathways I'm re-reading two books: a non fiction called The End of Everything (Astrophysically Speaking) by <a href="https://en.wikipedia.org/wiki/Katie_Mack_(astrophysicist)">Katie Mack</a> and for fiction, <a href="https://en.wikipedia.org/wiki/Annihilation_(VanderMeer_novel)">Annihilation</a> by Jeff VanderMeer.</p><p>I remember enjoying both when I read them originally, and thought they could help me get back in the habbit.
+    
+  </div>
+<div id="footer"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+</body>
+</html>
+
