@@ -58,7 +58,8 @@
         "pages/blog/20241027.html"
     ],
     "self.hosting": [
-        "pages/blog/20241027.html"
+        "pages/blog/20241027.html",
+        "20241118.html"
     ],
     "networking": [
         "pages/blog/20241101.html"
@@ -122,5 +123,20 @@
     ],
     "jeff.vandermeer": [
         "20241114.html"
+    ],
+    "search": [
+        "20241118.html"
+    ],
+    "google": [
+        "20241118.html"
+    ],
+    "tailscale": [
+        "20241118.html"
+    ],
+    "nginx": [
+        "20241118.html"
+    ],
+    "privacy": [
+        "20241118.html"
     ]
 }
