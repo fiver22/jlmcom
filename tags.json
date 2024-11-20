@@ -1,164 +1,164 @@
 {
     "gaming": [
-        "pages/minecraft.html"
+        "/pages/minecraft.html"
     ],
     "pc.gaming": [
-        "pages/minecraft.html",
-        "pages/blog/20241027.html"
+        "/pages/minecraft.html",
+        "/pages/blog/20241027.html"
     ],
     "minecraft": [
-        "pages/minecraft.html",
-        "pages/blog/20241027.html"
+        "/pages/minecraft.html",
+        "/pages/blog/20241027.html"
     ],
     "halloween": [
-        "pages/blog/20241031.html"
+        "/pages/blog/20241031.html"
     ],
     "american.election.2024": [
-        "pages/blog/2024-11-04.html",
-        "pages/blog/20241106.html",
-        "20241109.html"
+        "/pages/blog/2024-11-04.html",
+        "/pages/blog/20241106.html",
+        "/pages/blog/20241109.html"
     ],
     "election": [
-        "pages/blog/2024-11-04.html",
-        "pages/blog/20241106.html"
+        "/pages/blog/2024-11-04.html",
+        "/pages/blog/20241106.html"
     ],
     "dread": [
-        "pages/blog/2024-11-04.html",
-        "pages/blog/20241106.html"
+        "/pages/blog/2024-11-04.html",
+        "/pages/blog/20241106.html"
     ],
     "democracy": [
-        "pages/blog/2024-11-04.html",
-        "pages/blog/20241106.html"
+        "/pages/blog/2024-11-04.html",
+        "/pages/blog/20241106.html"
     ],
     "film": [
-        "pages/blog/20241028.html"
+        "/pages/blog/20241028.html"
     ],
     "alien": [
-        "pages/blog/20241028.html"
+        "/pages/blog/20241028.html"
     ],
     "alien.romulus": [
-        "pages/blog/20241028.html"
+        "/pages/blog/20241028.html"
     ],
     "film.review": [
-        "pages/blog/20241028.html"
+        "/pages/blog/20241028.html"
     ],
     "covid": [
-        "pages/blog/20241027.html"
+        "/pages/blog/20241027.html"
     ],
     "rlm": [
-        "pages/blog/20241027.html"
+        "/pages/blog/20241027.html"
     ],
     "flu": [
-        "pages/blog/20241027.html"
+        "/pages/blog/20241027.html"
     ],
     "vaccine": [
-        "pages/blog/20241027.html"
+        "/pages/blog/20241027.html"
     ],
     "filebrowser": [
-        "pages/blog/20241027.html"
+        "/pages/blog/20241027.html"
     ],
     "self.hosting": [
-        "pages/blog/20241027.html",
-        "20241118.html"
+        "/pages/blog/20241027.html",
+        "/pages/blog/20241118.html"
     ],
     "networking": [
-        "pages/blog/20241101.html"
+        "/pages/blog/20241101.html"
     ],
     "cable.run": [
-        "pages/blog/20241101.html"
+        "/pages/blog/20241101.html"
     ],
     "danzig": [
-        "20241108.html"
+        "/pages/blog/20241108.html"
     ],
     "prayer": [
-        "20241108.html"
+        "/pages/blog/20241108.html"
     ],
     "politics": [
-        "20241109.html"
+        "/pages/blog/20241109.html"
     ],
     "canada": [
-        "20241109.html"
+        "/pages/blog/20241109.html"
     ],
     "mobile.apps": [
-        "20241109_1.html"
+        "/pages/blog/20241109_1.html"
     ],
     "annoyances": [
-        "20241109_1.html"
+        "/pages/blog/20241109_1.html"
     ],
     "friends": [
-        "20241110_1.html"
+        "/pages/blog/20241110_1.html"
     ],
     "harbour.passage": [
-        "20241110_1.html"
+        "/pages/blog/20241110_1.html"
     ],
     "jayvo": [
-        "20241110_1.html"
+        "/pages/blog/20241110_1.html"
     ],
     "pc": [
-        "20241112.html"
+        "/pages/blog/20241112.html"
     ],
     "laptop": [
-        "20241112.html"
+        "/pages/blog/20241112.html"
     ],
     "hardware": [
-        "20241112.html"
+        "/pages/blog/20241112.html"
     ],
     "books": [
-        "20241114.html"
+        "/pages/blog/20241114.html"
     ],
     "attention.span": [
-        "20241114.html"
+        "/pages/blog/20241114.html"
     ],
     "digital.dementia": [
-        "20241114.html"
+        "/pages/blog/20241114.html"
     ],
     "annihilation": [
-        "20241114.html"
+        "/pages/blog/20241114.html"
     ],
     "southern.reach": [
-        "20241114.html"
+        "/pages/blog/20241114.html"
     ],
     "katie.mack": [
-        "20241114.html"
+        "/pages/blog/20241114.html"
     ],
     "jeff.vandermeer": [
-        "20241114.html"
+        "/pages/blog/20241114.html"
     ],
     "search": [
-        "20241118.html"
+        "/pages/blog/20241118.html"
     ],
     "google": [
-        "20241118.html"
+        "/pages/blog/20241118.html"
     ],
     "tailscale": [
-        "20241118.html"
+        "/pages/blog/20241118.html"
     ],
     "nginx": [
-        "20241118.html"
+        "/pages/blog/20241118.html"
     ],
     "privacy": [
-        "20241118.html"
+        "/pages/blog/20241118.html"
     ],
     "video": [
-        "20241119.html"
+        "/pages/blog/20241119.html"
     ],
     "youtube": [
-        "20241119.html"
+        "/pages/blog/20241119.html"
     ],
     "critique": [
-        "20241119.html"
+        "/pages/blog/20241119.html"
     ],
     "review": [
-        "20241119.html"
+        "/pages/blog/20241119.html"
     ],
     "pop.culture": [
-        "20241119.html"
+        "/pages/blog/20241119.html"
     ],
     "angela.collier": [
-        "20241119.html"
+        "/pages/blog/20241119.html"
     ],
     "star.trek": [
-        "20241119.html"
+        "/pages/blog/20241119.html"
     ],
     "site": [
         "/pages/blog/20241120.html"
