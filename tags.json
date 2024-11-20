@@ -161,15 +161,24 @@
         "/pages/blog/20241119.html"
     ],
     "site": [
-        "/pages/blog/20241120.html"
+        "/pages/blog/20241120.html",
+        "/pages/blog/20241120_1.html"
     ],
     "meta": [
         "/pages/blog/20241120.html"
     ],
     "python": [
-        "/pages/blog/20241120.html"
+        "/pages/blog/20241120.html",
+        "/pages/blog/20241120_1.html"
     ],
     "jippity": [
-        "/pages/blog/20241120.html"
+        "/pages/blog/20241120.html",
+        "/pages/blog/20241120_1.html"
+    ],
+    "coding": [
+        "/pages/blog/20241120_1.html"
+    ],
+    "chaggpt": [
+        "/pages/blog/20241120_1.html"
     ]
 }

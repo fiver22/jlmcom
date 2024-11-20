@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <title>Blog Post - 20241120</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<!-- 
+--- tags: ["site", "python", "coding", "jippity", "chaggpt"] 
+--- 
+-->
+<body>
+  <div id="sidebar"></div>
+  <!-- Load sidebar script immediately after the sidebar placeholder -->
+  <script src="/scripts/loadSidebar.js"></script>
+  <div class="content">
+    A few thoughts on jippity
+    <h4>20241120</h4>
+    <p><p>jippity pratically made this site -it's incredible when you think about it. Like, not only did it do the basic html which is probably a pretty trivial task for any machine, but it also worte css and put it in context with the site. That's a little more impressive. But on top of that it wrote js and python that works -there was a lot of back and forth and trial and error but it works. This seems not so trivial.</p>
+    <p>I hear every day from smart people in a mocking voice "jippity is gonna kill programming jobs", then returning to their normal voice "no it isn't you dummies". Understand that I am not a programmer at all, I can be walked through a hello world and sorta kinda get it, but beyond that I'm less than useless. I flatter myself that I can sorta see how the pythong and js work on this site. I sorta can, sometimes, kinda'.</p> 
+    <p> so bear that in mind when I say this: I see no reason llms won't take over a lot of coding in the near future. I see no reason why they won't get to a point where they are better than the best human programmers alive. Dismissive laughs of real programmers give me pause, sure, but there's a famous anecdote that comes to mind: In 1933 Ernest Rutherford was giving a lecture where he called the idea of extracting energy from atoms "moonshine". One day later Leo Szilard, having read about Rutherford's talk, came up with the idea of a nuclear chain reaction.</p>
+    <p>I'm no phycisist. I'm no programmer. But it seems unlikely that LLMs, reinforcement Learning, Neural Networks, et. al. won't surpass the best of our programmers.</p><p>If this sounds convincing to you, ysk that I've been wrong. A lot. </p>
+  </div>
+<div id="footer"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+</body>
+</html>
+
