@@ -15,7 +15,6 @@ debug = args.debug
 new_post_title = args.title
 new_tags = args.tags.split(',') if args.tags else []
 
-
 import os
 from datetime import datetime
 
@@ -34,7 +33,6 @@ root_index_path = os.path.join(project_root, "index.html")  # Adding path for th
 
 # Step 1: Create a New Blog File
 new_post_date = datetime.now().strftime("%Y%m%d")
-new_post_title = args.title
 new_post_filename = f"{new_post_date}.html"  # Change filename format to YYYYMMDD
 new_post_path = os.path.join(project_root, local_blog_dir, new_post_filename)
 
@@ -44,6 +42,10 @@ while os.path.exists(new_post_path):
     new_post_filename = f"{new_post_date}_{counter}.html"
     new_post_path = os.path.join(project_root, local_blog_dir, new_post_filename)
     counter += 1
+
+# Ensure the filename has the correct path prefix if it's not already there
+if not new_post_filename.startswith("/pages/blog/"):
+    new_post_filename = f"/pages/blog/{new_post_filename}"
 
 # Copy template_blog.html to new blog post file
 try:
@@ -66,9 +68,6 @@ with open(new_post_path, "w") as new_post_file:
     new_post_file.write(content)
 
 print(f"New blog post created: {new_post_filename}")
-
-# Open the new blog post file in vim for editing
-
 
 # Open the new blog post file in vim for editing
 os.system(f"vim {new_post_path}")
@@ -106,6 +105,8 @@ except FileNotFoundError:
 # Add new tags or update existing ones
 for tag in updated_tags:
     tag = tag.strip().lower()
+
+    # Add or update the tag in tags_data
     if tag in tags_data:
         if new_post_filename not in tags_data[tag]:
             tags_data[tag].append(new_post_filename)
@@ -141,7 +142,7 @@ except FileNotFoundError:
 
 # Add new blog link at the top of the list (assuming descending order)
 # Use the root-relative path for the HTML link
-new_entry = f'        <li><a href="{blog_dir}/{new_post_filename}">{new_post_date}: {new_post_title}</a></li>\n'
+new_entry = f'        <li><a href="{new_post_filename}">{new_post_date}: {new_post_title}</a></li>\n'
 
 # Insert the new entry right after the opening <ul> tag in /pages/blog/index.html
 for i, line in enumerate(index_content):
@@ -168,11 +169,11 @@ if root_index_content:
     # Use the root-relative path for the HTML link
     formatted_date = datetime.now().strftime("%Y-%m-%d")
     new_entry_root = (
-		f'            <article>\n'
-        f'        <h4><a class="blog-link" href="{blog_dir}/{new_post_filename}">'
-		f'{formatted_date}: {new_post_title}</a></h4>\n'
-        f'			   </article>\n'
-)
+        f'            <article>\n'
+        f'        <h4><a class="blog-link" href="{new_post_filename}">'
+        f'{formatted_date}: {new_post_title}</a></h4>\n'
+        f'            </article>\n'
+    )
     # Look for a marker comment to identify where to insert new blog entries
     marker = "<!-- Add more blog links as new posts are created -->"
     marker_found = False
@@ -196,5 +197,3 @@ if root_index_content:
     print(f"Root index updated with new entry in /index.html: {new_post_title}")
 else:
     print("Warning: Root index file could not be read. No changes made to root index.")
-
-
