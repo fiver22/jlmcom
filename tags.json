@@ -149,7 +149,8 @@
         "/pages/blog/20241119.html"
     ],
     "review": [
-        "/pages/blog/20241119.html"
+        "/pages/blog/20241119.html",
+        "/pages/blog/20241128.html"
     ],
     "pop.culture": [
         "/pages/blog/20241119.html"
@@ -187,5 +188,14 @@
     ],
     "domain": [
         "/pages/blog/20241123.html"
+    ],
+    "music": [
+        "/pages/blog/20241128.html"
+    ],
+    "future.sounds.of.london": [
+        "/pages/blog/20241128.html"
+    ],
+    "fsol": [
+        "/pages/blog/20241128.html"
     ]
 }
