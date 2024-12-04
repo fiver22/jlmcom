@@ -150,7 +150,8 @@
     ],
     "review": [
         "/pages/blog/20241119.html",
-        "/pages/blog/20241128.html"
+        "/pages/blog/20241128.html",
+        "/pages/blog/20241204.html"
     ],
     "pop.culture": [
         "/pages/blog/20241119.html"
@@ -190,12 +191,40 @@
         "/pages/blog/20241123.html"
     ],
     "music": [
-        "/pages/blog/20241128.html"
+        "/pages/blog/20241128.html",
+        "/pages/blog/20241204.html"
     ],
     "future.sounds.of.london": [
         "/pages/blog/20241128.html"
     ],
     "fsol": [
         "/pages/blog/20241128.html"
+    ],
+    "elvis": [
+        "/pages/blog/20241204.html"
+    ],
+    "elvis.presley": [
+        "/pages/blog/20241204.html"
+    ],
+    "rock.n.roll": [
+        "/pages/blog/20241204.html"
+    ],
+    "pop": [
+        "/pages/blog/20241204.html"
+    ],
+    "doo.wop": [
+        "/pages/blog/20241204.html"
+    ],
+    "rockabilly": [
+        "/pages/blog/20241204.html"
+    ],
+    "country": [
+        "/pages/blog/20241204.html"
+    ],
+    "blues": [
+        "/pages/blog/20241204.html"
+    ],
+    "r&b": [
+        "/pages/blog/20241204.html"
     ]
 }
