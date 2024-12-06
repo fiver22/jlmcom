@@ -1,0 +1,70 @@
+<!--
+---
+tags: ["pgp", "gpg"]
+---
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PGP Key - James Leo Murphy</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="sidebar"></div>
+  <script src="/scripts/loadSidebar.js"></script>
+  <div class="content">
+    <h1>PGP Public Key</h1>
+    
+    <h2>Key Information</h2>
+    <p>Key ID: C395C1EF22C75334<br>
+    Fingerprint: D2CD FAB0 772C 46A9 9C5E 5371 C395 C1EF 22C7 5334<br>
+    Email: jimmy&#64;lambertmurphy&#46;com</p>
+    
+    <h2>Public Key</h2>
+    <pre>
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+mDMEZ1HAlhYJKwYBBAHaRw8BAQdA5+tIPXGOAZnt3JTnkmwjz1SLnW+WuXl+ouxb
+r/nnXQW0KkphbWVzIExlbyBNdXJwaHkgPGppbW15QGxhbWJlcnRtdXJwaHkuY29t
+PoiUBBMWCgA8FiEE0s36sHcsRqmcXlNxw5XB7yLHUzQFAmdRwJYCGwEFCQPCZwAE
+CwkIBwQVCgkIBRYCAwEAAh4FAheAAAoJEMOVwe8ix1M08QEBAP/dGF6PnoZ7TWaY
+vm17sXVmAyALoni+lzOMhjSL8qklAP47mycCNFlhVuYLvWkN6MhrNxDLbc9H1fNt
++BNtMyz6C7gzBGdRwt0WCSsGAQQB2kcPAQEHQN3Who9rTivgIFKLIF+p5NdQ+Rbb
+e+Sz2f0cmD38mP+9iPUEGBYKACYWIQTSzfqwdyxGqZxeU3HDlcHvIsdTNAUCZ1HC
+3QIbAgUJA8JnAACBCRDDlcHvIsdTNHYgBBkWCgAdFiEEL6sglV6W5Moo7ZGXLhH9
+F3p8JmYFAmdRwt0ACgkQLhH9F3p8JmZpvwEA7IBV9NAcIM+rJoDYRJz7FuGJFwVV
+lNgjHP56XCfwJ7sBAPHG6nLd8SSSss3dMq2qQt8xPkPQzxSD71yn/2yyoJoNvKUB
+AJGKHho+VHhrFHgVQS1ggrzGWRGGpnwu+xprwJqWUDnTAP0e0WFQmoxjkvUzw5O4
+DyGWS0RMFULl4w5jfA5co+BiBbg4BGdRw+wSCisGAQQBl1UBBQEBB0AINw24Mlk1
+m/vWvYbd/geKnPxgrK4gQyI6z5vhokU6XwMBCAeIfgQYFgoAJhYhBNLN+rB3LEap
+nF5TccOVwe8ix1M0BQJnUcPsAhsMBQkDwmcAAAoJEMOVwe8ix1M0I3MBAPnhWaft
+rS/m9a1zEsx/97HqoML7Mg4PYOHDokcCDhprAQDS2ELQpZIHND3Fmp6Be2qv0xc7
+x2DwjfXxCmQzXrLTCbgzBGdRxFUWCSsGAQQB2kcPAQEHQPt8SJbvnIn7LpwUVFvO
+44r8+q0Y0DRFJ2p3E8btW8vRiH4EGBYKACYWIQTSzfqwdyxGqZxeU3HDlcHvIsdT
+NAUCZ1HEVQIbIAUJA8JnAAAKCRDDlcHvIsdTNMAtAP9IVPRW5UNbJ1qw7y8VHH+e
+wRE034iMJcqLiyJPP92lDgD+JNjKdfmYweEjRtf5RUUT/rVL2qxAwRKt9CzKgBLc
+NgU=
+=R+1j
+-----END PGP PUBLIC KEY BLOCK-----
+    </pre>
+    
+    <h2>Key Servers</h2>
+    <p>This key is also available on:</p>
+    <ul>
+        <li><a href="https://keys.openpgp.org">keys.openpgp.org</a></li>
+        <li><a href="https://keyserver.ubuntu.com">keyserver.ubuntu.com</a></li>
+        <li><a href="https://pgp.mit.edu">pgp.mit.edu</a></li>
+    </ul>
+  </div>
+</body>
+<div id="footer"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+</html>
