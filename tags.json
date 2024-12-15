@@ -192,7 +192,8 @@
     ],
     "music": [
         "/pages/blog/20241128.html",
-        "/pages/blog/20241204.html"
+        "/pages/blog/20241204.html",
+        "/pages/blog/20241215.html"
     ],
     "future.sounds.of.london": [
         "/pages/blog/20241128.html"
@@ -226,5 +227,14 @@
     ],
     "r&b": [
         "/pages/blog/20241204.html"
+    ],
+    "ministry": [
+        "/pages/blog/20241215.html"
+    ],
+    "art": [
+        "/pages/blog/20241215.html"
+    ],
+    "extra.life": [
+        "/pages/blog/20241215.html"
     ]
 }

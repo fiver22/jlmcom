@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+  <title>Blog Post - 20241215</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<!-- 
+--- tags: ["ministry", "music", "art", "extra.life"] 
+--- 
+-->
+<body>
+  <div id="sidebar"></div>
+  <!-- Load sidebar script immediately after the sidebar placeholder -->
+  <script src="/scripts/loadSidebar.js"></script>
+  <div class="content">
+    Art and Artist
+    <h4>20241215</h4>
+    <p>I know I'm not even the 500 millionth person to think about this tension. In the past I have thrown away art because the artist said or did something I found stupid or morally questionable. This mostly has occurred with musicians I like but I've had it happen with respect to authors, and visual artists. I think I'm going to lean away from that now.</p><p>There are just too many confused people who make great art.</p>
+  </div>
+<div id="footer"></div>
+<script>
+  fetch('/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+</body>
+</html>
+
